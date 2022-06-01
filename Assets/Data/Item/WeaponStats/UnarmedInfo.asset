@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e82e059fe754498a5d3a132d3e70983, type: 3}
+  m_Name: UnarmedInfo
+  m_EditorClassIdentifier: 
+  _id: 
+  _name: Unarmed
+  _discription: 
+  _maxItemsInInventorySlot: 1
+  _icon: {fileID: 0}
+  _pefab: {fileID: 0}
+  _staminaCost: 0
+  _manaCost: 0
+  _twoHand: 1
+  _equippedType: 7
+  _buffStats:
+    _healthBuff:
+      _name: 
+      _currentValue: 0
+      _baseValue: 0
+    _damageBuff:
+      _name: 
+      _currentValue: 0
+      _baseValue: 0
+    _staminaBuff:
+      _name: 
+      _currentValue: 0
+      _baseValue: 0
+    _manaBuff:
+      _name: 
+      _currentValue: 0
+      _baseValue: 0
+    _intelligenceBuff:
+      _name: 
+      _currentValue: 0
+      _baseValue: 0
+    _protectionBuff:
+      _name: 
+      _currentValue: 0
+      _baseValue: 0
+    _dexterityBuff:
+      _name: 
+      _currentValue: 0
+      _baseValue: 0
+    _healthPercent: 0
+    _damagePercent: 0
+    _staminaPercent: 0
+    _manaPercent: 0
+    _intelligencePercent: 0
+    _protectionPercent: 0
+    _dectertityPercent: 0
+  _animationInfo:
+    _shield: 0
+    _aiming: 0
+    _weaponNumberAnimation: 0
+    _leftRightAnimation: 0
+    _leftWeaponAnimation: 0
+    _rightWeaponAnimation: 0
+    _attackSideAnimation: 0
+  _modelInfo:
+    _isNacktModelUnload: 0
+    _modelsName: []
+  _leftWeaponPrefab: {fileID: 3393033143797249010, guid: c972dd5ecf35e204baf5131519d501ff, type: 3}
+  _rightWeaponPrefab: {fileID: 7678497788669616617, guid: d119bade054b11a4b9dd1ff021708789, type: 3}

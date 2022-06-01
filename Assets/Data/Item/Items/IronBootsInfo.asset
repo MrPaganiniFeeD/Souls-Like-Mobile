@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cd7238eb48f0c43af4a7c699609a19, type: 3}
+  m_Name: IronBootsInfo
+  m_EditorClassIdentifier: 
+  _id: 
+  _name: IronBoots
+  _discription: 
+  _maxItemsInInventorySlot: 1
+  _icon: {fileID: 21300000, guid: b00f0e5c29095d946ae7f6cb2cb867f8, type: 3}
+  _pefab: {fileID: -3099386898140721503, guid: 4a1d270a582280644b3e517c6b38cf60, type: 3}
+  _type: 3
+  _itemBuffStats:
+    _healthBuff:
+      _name: 
+      _currentValue: 0
+      _baseValue: 0
+    _damageBuff:
+      _name: Damage
+      _currentValue: 0
+      _baseValue: 0
+    _staminaBuff:
+      _name: 
+      _currentValue: 0
+      _baseValue: 0
+    _manaBuff:
+      _name: 
+      _currentValue: 0
+      _baseValue: 0
+    _intelligenceBuff:
+      _name: 
+      _currentValue: 0
+      _baseValue: 0
+    _protectionBuff:
+      _name: Protection
+      _currentValue: 0
+      _baseValue: 30
+    _dexterityBuff:
+      _name: 
+      _currentValue: 0
+      _baseValue: 0
+    _healthPercent: 0
+    _damagePercent: 0
+    _staminaPercent: 0
+    _manaPercent: 0
+    _intelligencePercent: 0
+    _protectionPercent: 2.18
+    _dectertityPercent: 0
+  _modelInfo:
+    _isNacktModelUnload: 1
+    _modelsName:
+    - Chr_LegLeft_Male_01
+    - Chr_LegRight_Male_01
