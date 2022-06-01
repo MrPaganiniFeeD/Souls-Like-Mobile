@@ -11,7 +11,7 @@ namespace UI.Bars
         [Inject]
         public override void Constructor(IPersistentProgressService progressService)
         {
-            Stat = progressService.PlayerProgress.PlayerState.PlayerStats.Mana;
+            Stat = progressService.PlayerProgress.playerStateData.PlayerStats.Mana;
             SetValue();
             Stat.StateChanged += UpdateValue;
         }

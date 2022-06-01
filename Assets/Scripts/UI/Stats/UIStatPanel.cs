@@ -15,7 +15,7 @@ namespace UI.Stats
         [Inject]
         public void Construct(IPersistentProgressService progressService)
         {
-            _playerStats = progressService.PlayerProgress.PlayerState.PlayerStats;
+            _playerStats = progressService.PlayerProgress.playerStateData.PlayerStats;
         }
     
         private Stat[] _stats;

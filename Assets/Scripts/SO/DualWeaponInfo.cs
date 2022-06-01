@@ -1,8 +1,8 @@
-﻿using DefaultNamespace.Animation;
+﻿using Animation;
 using DefaultNamespace.ModelData;
 using DefaultNamespace.Weapon;
 using UnityEngine;
-using AnimationInfo = DefaultNamespace.Animation.AnimationInfo;
+using AnimationInfo = Animation.AnimationInfo;
 
 namespace DefaultNamespace.SO
 {

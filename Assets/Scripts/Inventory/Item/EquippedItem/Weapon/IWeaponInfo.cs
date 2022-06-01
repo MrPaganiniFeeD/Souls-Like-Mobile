@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using DefaultNamespace.Animation;
+using Animation;
 using UnityEngine;
 
 public interface IWeaponInfo : IEquippedItemInfo

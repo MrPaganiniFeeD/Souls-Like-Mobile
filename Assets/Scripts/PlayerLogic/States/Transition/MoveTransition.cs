@@ -1,5 +1,5 @@
 using Infrastructure.Services;
-using PlayerLogic.Behaviour.Move;
+using PlayerLogic.States.State;
 using PlayerLogic.States.StateMachine;
 using UnityEngine;
 

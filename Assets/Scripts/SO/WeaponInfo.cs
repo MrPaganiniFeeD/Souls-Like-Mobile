@@ -1,10 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using DefaultNamespace.Animation;
+using Animation;
 using DefaultNamespace.ModelData;
 using UnityEngine;
-using AnimationInfo = DefaultNamespace.Animation.AnimationInfo;
+using AnimationInfo = Animation.AnimationInfo;
 
 [CreateAssetMenu(fileName = "New Item Info", menuName = "Items/Create New Weapon", order = 51)]
 

@@ -1,4 +1,4 @@
-﻿namespace DefaultNamespace.Animation
+﻿namespace Animation
 {
     public interface IAttackAnimation
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace DefaultNamespace.Animation
+namespace Animation
 {
     [Serializable]
     public class AnimationInfo : IAnimationInfo

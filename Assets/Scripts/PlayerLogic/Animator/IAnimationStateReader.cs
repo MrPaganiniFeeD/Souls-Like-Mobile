@@ -1,5 +1,4 @@
 ﻿using System;
-using DefaultNamespace.Animation;
 using UnityEditor.Animations;
 using UnityEngine;
 

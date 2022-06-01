@@ -10,7 +10,7 @@ namespace UI.Bars
         [Inject]
         public override void Constructor(IPersistentProgressService progressService)
         {
-            Stat = progressService.PlayerProgress.PlayerState.PlayerStats.Health;
+            Stat = progressService.PlayerProgress.playerStateData.PlayerStats.Health;
             SetValue();
             Stat.StateChanged += UpdateValue;
         }

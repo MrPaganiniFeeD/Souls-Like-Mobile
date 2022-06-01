@@ -1,5 +1,6 @@
 ﻿using System;
 using PlayerLogic.Stats;
+using UnityEngine.Serialization;
 
 namespace Data
 {
@@ -8,13 +9,13 @@ namespace Data
     {
         public WorldData WorldData;
         public KillData KillData;
-        public PlayerState PlayerState;
+        [FormerlySerializedAs("PlayerState")] public PlayerStateData playerStateData;
         
 
         public PlayerProgress(string initialLevel, IStatsProvider statsProvider)
         {
             WorldData = new WorldData(initialLevel);
-            PlayerState = new PlayerState(statsProvider);
+            playerStateData = new PlayerStateData(statsProvider);
             KillData = new KillData();
         }
     }

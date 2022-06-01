@@ -5,11 +5,11 @@ using UnityEngine;
 namespace Data
 {
     [Serializable]
-    public class PlayerState
+    public class PlayerStateData
     {
         public PlayerStats PlayerStats;
 
-        public PlayerState(IStatsProvider statsProvider)
+        public PlayerStateData(IStatsProvider statsProvider)
         {
             PlayerStats = statsProvider.GetStats();
             PlayerStats.ShowInfoStats();

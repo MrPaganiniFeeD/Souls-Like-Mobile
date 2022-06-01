@@ -23,8 +23,7 @@ namespace Fabrics
         private GameObject _player;
         private PlayerStateAnimator _animator;
 
-        public FabricPlayerStates(IInputService inputService, IAttackButton leftAttackButton,
-            IAttackButton rightHandAttackButton, IWeaponSlotInstaller inventoryEquipped, PlayerStats playerStats,
+        public FabricPlayerStates(IInputService inputService, IWeaponSlotInstaller inventoryEquipped, PlayerStats playerStats,
             IFactoryTransition fabricTransition, GameObject player)
         {
             _inputService = inputService;
@@ -38,81 +37,16 @@ namespace Fabrics
         {
             return stateInfo.State switch
             {
-                TypePlayerState.Idle => new IdleState(_fabricTransitions.CreatTransitions(stateInfo.Transitions), _animator)
-            
-                //TypePlayerState.Move => ,
-            
-                /*TypePlayerState.AttackLeftHand => new LeftHandAttackState(
-                    _player.GetComponent<IAttackBehaviour>(),
-                    _player.GetComponent<IAttackAnimation>(),
-                    _leftHandAttackButton,
-                    _inputService,
-                    _leftWeaponSlot,
-                    _playerStats,
-                    _fabricTransitions.CreatTransitions(stateInfo.Transitions, playerStateMachine))*/
-            
-                /*TypePlayerState.AttackRightHand => new RightHandAttackState(
-                    _player.GetComponent<IAttackBehaviour>(),
-                    _player.GetComponent<IAttackAnimation>(),
-                    _rightHandAttackButton,
-                    _inputService,
-                    _rightWeaponSlot,
-                    _playerStats,
-                    _fabricTransitions.CreatTransitions(stateInfo.Transitions, playerStateMachine))*/,
-            
-                /*
-                TypePlayerState.Attack => new AttackState(_player.GetComponent<IAttackBehaviour>(), 
-                    _fabricTransitions.CreatTransitions(stateInfo.Transitions, playerStateMachine)),
-                    */
-            
-                /*
-                TypePlayerState.Roll => new RollingState(_player.GetComponent<IRolling>(),
-                    _fabricTransitions.CreatTransitions(stateInfo.Transitions, playerStateMachine), 
-                    _inputService),
-                    */
-            
-                /*
-                TypePlayerState.TakeDamage => new TakeDamageState(
-                    _player.GetComponent<ITakeDamageBehaviour>(), 
-                    _player.GetComponent<IDamageDetection>(),
-                    _playerStats,
-                    _fabricTransitions.CreatTransitions(stateInfo.Transitions, playerStateMachine)),
-                    */
-            
-                /*
-                TypePlayerState.Death => new DeathPlayerState(_player.GetComponent<IDeathBehaviour>(), 
-                    _fabricTransitions.CreatTransitions(stateInfo.Transitions, playerStateMachine)),
-                    */
-            
+                TypePlayerState.Idle => new IdleState(_fabricTransitions.CreatTransitions(stateInfo.Transitions), _animator),
+                
                 _ => new UnknownState()
             };
         }
-
-        /*
-        public SuperState CreateSuperState(ISuperStateInfo stateInfo, PlayerStateMachine basePlayerStateMachine)
-        {
-            return stateInfo.SuperState switch
-            {
-                TypePlayerSuperState.NormalConditions => new NormalConditionSuperState(
-                    CreateStates(stateInfo.ChildrenStateInfos, basePlayerStateMachine),
-                    _fabricTransitions.CreatTransitions(stateInfo.Transitions, basePlayerStateMachine),
-                    basePlayerStateMachine),
-            
-                _ => throw new ArgumentOutOfRangeException()
-            };
-        }
-        */
         public List<PlayerState> CreateStates(IEnumerable<PlayerStateInfo> stateInfos,
             PlayerStateMachine playerStateMachine)
         {
             return stateInfos.Select(stateInfo => CreateState(stateInfo, playerStateMachine)).ToList();
         }
-
-        /*
-        public List<SuperState> CreateSuperStates(List<ISuperStateInfo> stateInfos, PlayerStateMachine basePlayerStateMachine)
-        {
-            return stateInfos.Select(stateInfo => CreateSuperState(stateInfo, basePlayerStateMachine)).ToList();
-        }
-    */
+        
     }
 }

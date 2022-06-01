@@ -8,7 +8,7 @@ namespace UI.Bars
         [Inject]
         public override void Constructor(IPersistentProgressService progressService)
         {
-            Stat = progressService.PlayerProgress.PlayerState.PlayerStats.Stamina;
+            Stat = progressService.PlayerProgress.playerStateData.PlayerStats.Stamina;
             SetValue();
             Stat.StateChanged += UpdateValue;
         }

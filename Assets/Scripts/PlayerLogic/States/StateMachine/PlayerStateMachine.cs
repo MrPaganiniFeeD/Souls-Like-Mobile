@@ -8,7 +8,6 @@ using Fabrics;
 using Infrastructure.Services;
 using Infrastructure.Services.PersistentProgress;
 using PlayerLogic.Animation;
-using PlayerLogic.Behaviour.Move;
 using PlayerLogic.States.State;
 using PlayerLogic.States.Transition;
 using UnityEngine;
@@ -32,7 +31,6 @@ namespace PlayerLogic.States.StateMachine
         private PlayerStateAnimator _animator;
         private CharacterController _characterController;
         private Transform _transform;
-        //private Queue<IState> _queueStates;
         private Dictionary<IState, IPlayerStatePayloaded> _queueStates;
 
         [Inject]
@@ -167,16 +165,6 @@ namespace PlayerLogic.States.StateMachine
 
         private TState GetState<TState>() where TState : class, IState => 
             _allState[typeof(TState)] as TState;
-
-        public void SwitchState(TypePlayerState attack)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void SwitchStateThroughTheBlock(TypePlayerState takeDamage)
-        {
-            throw new NotImplementedException();
-        }
 
         private static string CurrentLevel() => 
             SceneManager.GetActiveScene().name;
